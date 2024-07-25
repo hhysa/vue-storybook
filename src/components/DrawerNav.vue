@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { ref, defineExpose  } from 'vue'
+import { ref  } from 'vue'
 
 // Define a reactive variable (ref)
 const drawer = ref(false)
 // Define a method to toggle the drawer state
-const toggleDrawer = () => {
+// const toggleDrawer = () => {
+// console.log(drawer)
+//   drawer.value = !drawer.value
+// }
 
-  drawer.value = !drawer.value
-}
-defineExpose({
-  toggleDrawer
-});
+// defineProps({drawer:Boolean})
+defineEmits(["toggleDrawer"]);
 </script>
 <template>
   <div
@@ -19,8 +19,8 @@ defineExpose({
   >
     <!-- Drawer Content -->
     <button
-      @click="toggleDrawer"
-      type="button"
+      @click="$emit('toggleDrawer')"
+      
       class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
     >
       <svg
