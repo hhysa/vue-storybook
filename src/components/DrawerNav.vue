@@ -43,7 +43,7 @@ const toggleActive = () => {
             <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Services</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Contact</a>
+            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Work With Me</a>
           </li>
         </ul>
       </div>
