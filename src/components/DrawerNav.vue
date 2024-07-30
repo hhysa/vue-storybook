@@ -37,20 +37,20 @@ const toggleActive = () => {
             <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Home</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">About</a>
+            <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">About</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Services</a>
+            <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Services</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Work With Me</a>
+            <a href="#portfolio" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">Portfolio</a>
           </li>
         </ul>
       </div>
     </div>
 
     <!-- Toggle Button -->
-    <button @click="toggleActive" class="p-4 focus:outline-none z-50">
+    <button @click="toggleActive" class="p-4 focus:outline-none z-50 md:hidden">
       <svg
         v-if="!isActive"
         class="w-6 h-6 text-gray-800 dark:text-gray-100"
