@@ -1,7 +1,5 @@
 <script setup lang="ts">
 
-import { defineProps, defineEmits } from 'vue'
-
 // Define the prop
 const props = defineProps({
   isActive: {
@@ -15,8 +13,6 @@ const emit = defineEmits(['update:isActive'])
 
 // Method to toggle the boolean value and emit the event
 const toggleActive = () => {
-  console.log('hii')
-  console.log(props.isActive)
   emit('update:isActive', !props.isActive)
 }
 </script>
